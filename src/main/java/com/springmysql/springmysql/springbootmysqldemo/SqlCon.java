@@ -25,11 +25,13 @@ public class SqlCon {
 		        int count = 1;  
 		        String vehicleType = null;
 		        while (rs.next()) {
-		            vehicleType = rs.getString("Ranker");
+		            vehicleType = rs.getString("Name");
 		            System.out.println(count  +": " + vehicleType);
 		            count++;
 
 		        }
+		       
+		           
 		    
 		     connection.close();
 		     return vehicleType;
