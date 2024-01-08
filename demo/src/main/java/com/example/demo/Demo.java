@@ -15,8 +15,8 @@ class Demo {
 		= number.stream()
 			.map(x -> x * x)
 			.collect(Collectors.toList());
-		int a = square.stream().toList().get(1);
-		System.out.println(a+" qwertyuiop");
+//		int a = square.stream().toList().get(1);
+//		System.out.println(a+" qwertyuiop");
 		// create a list of String
 		List<String> names = Arrays.asList(
 			"Reflection", "Collection", "Stream");
