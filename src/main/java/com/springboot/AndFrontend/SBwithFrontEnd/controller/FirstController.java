@@ -36,6 +36,7 @@ public class FirstController{
 	public String register(@RequestParam String phone,@RequestParam String firstname, @RequestParam String lastname, @RequestParam String passc) throws SQLException{
 		
 		if(firstname.isEmpty() || passc.isEmpty() || lastname.isEmpty()) {
+			System.out.println("errorregister");
 			return "errorregister";  
 		}
 		
