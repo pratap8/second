@@ -35,7 +35,7 @@ public class FirstController{
 	@PostMapping("/register/formfilled")
 	public String register(@RequestParam String phone,@RequestParam String firstname, @RequestParam String lastname, @RequestParam String passc) throws SQLException{
 		
-		if(firstname == null || passc == null || lastname ==null) {
+		if(firstname.isEmpty() || passc.isEmpty() || lastname.isEmpty()) {
 			return "errorregister";  
 		}
 		
