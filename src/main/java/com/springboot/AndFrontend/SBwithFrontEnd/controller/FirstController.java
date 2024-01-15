@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.springboot.AndFrontend.SBwithFrontEnd.Dao.FileService;
 
 
-@Controller
+@Controller 
 public class FirstController{
 	
 	@Autowired
