@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>File One</h1>
+<form action="/login">
+		<button value="Login Page">Login</button>
+	</form>
+	<form action="/register">
+		<button value="register">Register</button>
+	</form>
 </body>
 </html>
