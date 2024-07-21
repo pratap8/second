@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,29 +9,36 @@ import java.util.Map;
 public class HashPrac {
 
 	public static void main(String[] args) {
-		String key="the quick brown fox jumps over the lazy dog";
-		String message="vkbs bs t suepuv";
-		key = key.replaceAll(" ", "");
-		char ch1 = 'a';
-		String a = "";
-		HashMap<Character,Character> hash = new HashMap<Character,Character>();
-		for(int i=0;i<key.length();i++) {
-			if(!hash.containsValue(key.charAt(i))) {
-				hash.put(ch1, key.charAt(i));
-//				System.out.println(ch1+" -> "+key.charAt(i));
-				ch1++;
-		}
-		}
-		System.out.println(hash);
-		for(int i=0;i<message.length();i++) {
-			if(message.charAt(i) != ' ') {
-			a+= hash.get(message.charAt(i));
-			
-			System.out.println(a);
-		}else {
-			a+= ' ';
-		}
-			
-	}
+		String a="qqwwweeeerrrrrr";
+		char[] b=a.toCharArray();
+		Map<Character, Integer> c = new HashMap<Character, Integer>();
+		
+//		for(char d:b) {
+//			if(c.containsKey(d)) {
+//				c.put(d, c.get(d)+1);
+//			}else {
+//				
+//				c.put(d, 1);
+//			}
+//		} 
+//		for(Map.Entry<Character, Integer> qq:c.entrySet() ) {
+//			System.out.println(qq.getKey()+"   "+qq.getValue());
+//		}
+		Hasher hasher = new Hasher();
+		hasher.hashing();
 	}
 }
+class Hasher{
+	public void hashing() {
+		String name="phool babu raj pratap singh";
+		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+		for(int i=0;i<name.length();i++) {
+			if(map.containsKey(name.charAt(i))) {
+				map.put(name.charAt(i), map.get(name.charAt(i))+1);
+			}else {
+				map.put(name.charAt(i), 1);
+			}
+		}
+	}
+}
+

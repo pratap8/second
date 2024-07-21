@@ -8,7 +8,9 @@ public class CheckerPalin {
 	        String[] strings = {"racecar", "hello", "level", "world", "radar", "java"};
 	        List<String> nonPalindromes = getNonPalindromes(strings);
 	        
-	        System.out.println("Non-palindrome strings: " + nonPalindromes);
+//	        System.out.println("Non-palindrome strings: " + nonPalindromes);
+	        palinInt intPalin = new palinInt();
+	        System.out.println(intPalin.intPalin1());
 	    }
 
 	    public static List<String> getNonPalindromes(String[] strings) {
@@ -72,3 +74,19 @@ public class CheckerPalin {
 	        return result;
 	    }
 	}
+
+class palinInt{
+	public boolean intPalin1() {
+		int i=121,k=i;
+		int reverse=0;
+		while(i>0) {
+			reverse=i%10+reverse*10;
+			i=i/10;
+			System.out.println(reverse);
+		}
+		if(reverse==k) {
+			return true;
+		}
+		return false;
+	}
+}

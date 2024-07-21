@@ -16,12 +16,12 @@ class Anar{
     	int z=0;
     	for(int i=0;i<s.length();i++) {
     		count[s.charAt(i)-'a']++;
-    		System.out.println(s.charAt(i)-'a'+"   "+s.charAt(i));
+    		System.out.println(s.charAt(i)-'a'+"   "+s.charAt(i)+"   "+count[s.charAt(i)-'a']++);
     		count[t.charAt(i)-'a']--;
-    		System.out.println(t.charAt(i)-'a'+"    "+t.charAt(i));
+    		System.out.println(t.charAt(i)-'a'+"    "+t.charAt(i)+"   "+count[t.charAt(i)-'a']--);
     	}
     	for(int a: count) {
-    		System.out.println(a);
+//    		System.out.println(a);
     		if(a>0) {
     			steps+=a;
     		}
