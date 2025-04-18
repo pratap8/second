@@ -3,7 +3,7 @@ package com.example.demo.LL;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RemoveDuplicate {
+public class RemoveDuplicateFromSorted {
 	public static void main(String[] args) {
 		Node node = new Node(0);
 		node.next = new Node(1);
